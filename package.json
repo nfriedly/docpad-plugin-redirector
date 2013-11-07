@@ -1,0 +1,42 @@
+{
+  "name": "docpad-plugin-redirector",
+  "version": "2.0.0-pre1",
+  "description": "DocPad plugin for redirecting URLs to other websites via configuration. Based on the cleanurls plugin.",
+  "homepage": "http://docpad.org/plugin/cleanurls",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "redirect urls",
+    "clean urls",
+    "seo"
+  ],
+  "author": "Nathan Friedly - http://nfriedly.com/",
+  "bugs": {
+    "url": "https://github.com/nfriedly/docpad-plugin-redirector/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nfriedly/docpad-plugin-redirector.git"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "safefs": "~3.0.4",
+    "taskgroup": "~3.3.1",
+    "lodash": "~2.2.1"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "chai": "~1.8.1",
+    "request": "~2.27.0",
+    "docpad": "~6.54.5"
+  },
+  "main": "./out/redirector.plugin.js",
+  "scripts": {
+    "test": "node ./out/redirector.test.js"
+  },
+  "peerDependencies": {
+    "docpad": ">=6.54.4 <7"
+  }
+}
