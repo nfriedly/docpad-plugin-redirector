@@ -4,6 +4,8 @@
 [DocPad](https://docpad.org) plugin for redirecting URLs to other websites via config. Based on [clean urls](https://github.com/docpad/docpad-plugin-cleanurls).
 
 [![Build Status](https://travis-ci.org/nfriedly/docpad-plugin-redirector.png?branch=master)](https://travis-ci.org/nfriedly/docpad-plugin-redirector)
+[![NPM version](https://badge.fury.io/js/docpad-plugin-redirector.png)](http://badge.fury.io/js/docpad-plugin-redirector)
+
 
 ## Install
 
