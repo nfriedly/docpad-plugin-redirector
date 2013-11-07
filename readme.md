@@ -1,7 +1,7 @@
 # Redirector Plugin for [DocPad](https://docpad.org)
 
 
-[DocPad](https://docpad.org) plugin for redirecting URLs to other websites. Similar to (and based on) [clean urls](https://github.com/docpad/docpad-plugin-cleanurls) plugin.
+[DocPad](https://docpad.org) plugin for redirecting URLs to other websites via config. Based on [clean urls](https://github.com/docpad/docpad-plugin-cleanurls).
 
 
 
