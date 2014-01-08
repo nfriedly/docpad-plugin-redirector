@@ -19,7 +19,7 @@
     "url": "https://github.com/nfriedly/docpad-plugin-redirector.git"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.4"
   },
   "dependencies": {
     "safefs": "~3.0.4",
