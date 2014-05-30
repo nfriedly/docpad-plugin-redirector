@@ -45,6 +45,7 @@ module.exports = (BasePlugin) ->
 			config = @config
 			server = opts.server
 			self = @
+			docpad = @docpad
 			
 			_ = require('lodash')
 
@@ -52,7 +53,7 @@ module.exports = (BasePlugin) ->
 			_.each config.redirects, (destination, source) ->
 				self.checkUrls(source, destination)
 				source = self.cleanSourceUrl source
-				@docpad.log 'debug', "Redirector setting up #{source} -> #{destination}"
+				docpad.log 'debug', "Redirector setting up #{source} -> #{destination}"
 				server.get source, (req, res) ->
 					res.redirect config.status, destination
 
