@@ -72,8 +72,8 @@ module.exports = (BasePlugin) ->
 			pathUtil = require('path')
 			getCleanOutPathFromUrl = (url) ->
 				url = url.replace(/\/+$/,'')
-				# if the path ends in .htm or .html, keep it as-is
-				if /\.html?$/.test(url)
+				# if the path ends in .htm or .html or .shtml or .shtm, keep it as-is
+				if /\.s?html?$/.test(url)
 					pathUtil.join(docpadConfig.outPath, url)
 				else
 					# otherwise, create a directory at that path and give it an index.html
