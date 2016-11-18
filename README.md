@@ -18,7 +18,7 @@ docpad install redirector
 
 Creates 301 redirects for non-static environments.
 
-Creates html files at the source urls with 0-second meta refresh tags pointing to the destination url for static environments. Creates a directory with an `index.html` file if the source url does not end in `.html` (e.g. `somelink` will be generated as `somelink/index.html`). 
+Creates html files at the source urls with 0-second meta refresh tags pointing to the destination url for static environments. Creates a directory with an `index.html` file if the source url does not end in `.htm`, ``.html`, or `.shtml` (e.g. `somelink` will be generated as `somelink/index.html`).
 
 You can tell docpad to use the static environment by adding `--env static` to the end of your DocPad command, so to perform a one off generation for a static environment you'll run `docpad generate --env static`, to perform your usual generate, serve and watch it'll be `docpad run --env static`.
 
