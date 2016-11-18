@@ -22,23 +22,28 @@
     "node": ">=0.4"
   },
   "dependencies": {
-    "safefs": "~3.0.4",
-    "taskgroup": "~3.3.1",
-    "lodash": "~2.2.1"
+    "safefs": "~4.1.0",
+    "taskgroup": "~5.0.1",
+    "lodash": "~4.17.2"
   },
   "devDependencies": {
+    "assert-helpers": "^4.4.0",
     "cake": "^0.1.1",
-    "chai": "~1.8.1",
-    "coffee-script": "~1.6.3",
-    "docpad": "~6.54.5",
-    "request": "~2.27.0"
+    "chai": "~3.5.0",
+    "coffee-script": "~1.11.1",
+    "docpad": "~6.79.0",
+    "joe": "^2.0.2",
+    "joe-reporter-console": "^2.0.1",
+    "request": "~2.79.0"
   },
   "main": "./out/redirector.plugin.js",
   "scripts": {
-    "test": "node ./out/redirector.test.js",
-    "prepublish": "cake compile"
+    "build": "coffee --compile --output out/ src/",
+    "test": "npm run build && node ./out/redirector.test.js --joe-reporter=console",
+    "prepublish": "npm run build"
   },
   "peerDependencies": {
     "docpad": ">=6.54.4 <7"
-  }
+  },
+  "license": "MIT"
 }

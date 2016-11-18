@@ -15,4 +15,5 @@ out/
 # =====================================
 # CUSTOM MODIFICATIONS
 
-# None
+test/*/out/
+test/*/node_modules/
