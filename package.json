@@ -27,14 +27,16 @@
     "lodash": "~2.2.1"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.3",
+    "cake": "^0.1.1",
     "chai": "~1.8.1",
-    "request": "~2.27.0",
-    "docpad": "~6.54.5"
+    "coffee-script": "~1.6.3",
+    "docpad": "~6.54.5",
+    "request": "~2.27.0"
   },
   "main": "./out/redirector.plugin.js",
   "scripts": {
-    "test": "node ./out/redirector.test.js"
+    "test": "node ./out/redirector.test.js",
+    "prepublish": "cake compile"
   },
   "peerDependencies": {
     "docpad": ">=6.54.4 <7"
