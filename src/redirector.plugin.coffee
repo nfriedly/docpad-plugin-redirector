@@ -84,7 +84,7 @@ module.exports = (BasePlugin) ->
 			
 				# Tasks
 				docpad.log 'debug', 'Writing static clean url files'
-				tasks = new TaskGroup().setConfig(concurrency:0).once 'complete', (err) ->
+				tasks = new TaskGroup().setConfig(concurrency:0).done (err) ->
 					docpad.log 'debug', 'Wrote static clean url files'
 					return next(err)
 
