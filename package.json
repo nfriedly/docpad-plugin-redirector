@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-redirector",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "DocPad plugin for redirecting URLs to other websites via configuration. Based on the cleanurls plugin.",
   "homepage": "http://docpad.org/plugin/cleanurls",
   "keywords": [
