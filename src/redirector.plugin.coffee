@@ -16,6 +16,7 @@ module.exports = (BasePlugin) ->
 					<head>
 						<title>Redirect</title>
 						<meta http-equiv="REFRESH" content="0;url=#{destination}">
+						<link rel="canonical" href="#{destination}" />
 					</head>
 					<body>
 						This page has moved. You will be automatically redirected to its new location. If you aren't forwarded to the new page, <a href="#{destination}">click here</a>.
