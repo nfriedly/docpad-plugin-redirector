@@ -1,5 +1,10 @@
 # Redirector Plugin for [DocPad](https://docpad.org)
 
+⚠️ DEPRECATED ⚠️
+
+This plugin is no longer actively maintained. Please use the `simpleRedirects` feature of `docpad-plugin-cleanurls`: https://github.com/docpad/docpad-plugin-cleanurls#simpleredirects
+
+---
 
 [DocPad](https://docpad.org) plugin for redirecting URLs to other websites via config. Based on [clean urls](https://github.com/docpad/docpad-plugin-cleanurls) and [Base](https://github.com/bevry/base).
 
